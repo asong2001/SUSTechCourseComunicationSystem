@@ -7,7 +7,7 @@ classdef QPSKDataDecoderR < matlab.System
         BarkerLength=13;
         ModulationOrder = 4; 
         DataLength=174;
-        MessageLength=112;
+        MessageLength=105;
 %         HeaderLength = 26;
 %         PayloadLength = 2240;
 %         NumberOfMessage = 20;
@@ -39,13 +39,13 @@ classdef QPSKDataDecoderR < matlab.System
     properties (Constant, Access = private)
         pBarkerCode = [+1; +1; +1; +1; +1; -1; -1; +1; +1; -1; +1; -1; +1;...
                        +1; +1; +1; +1; +1; -1; -1; +1; +1; -1; +1; -1; +1]; % Bipolar Barker Code
-        pModulatedHeader = sqrt(2)/2 * (-1-1i) * QPSKDataDecoderR.pBarkerCode;
+        pModulatedHeader = sqrt(2)/2 * (-1-1i) * QPSKDataDecoder.pBarkerCode;
 %         pMessage = 'Hello world';
 %         pMessageLength = 16;
     end
     
     methods
-        function obj = QPSKDataDecoderR(varargin)
+        function obj = QPSKDataDecoder(varargin)
             setProperties(obj,nargin,varargin{:});
         end
     end
@@ -101,7 +101,7 @@ classdef QPSKDataDecoderR < matlab.System
 
                 demodOutMsg = demodOut(...
                     obj.BarkerLength*log2(obj.ModulationOrder)+1:...
-                    obj.FrameSize*log2(obj.ModulationOrder));
+                    obj.FramSize*log2(obj.ModulationOrder));
 
                 vhat = decodeBitFlip(demodOutMsg', obj.LdpcNewH, obj.LdpcIteration);
                 deScrDataMsg = vhat(149:end)';

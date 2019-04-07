@@ -1,4 +1,4 @@
-function vHat = decodeBitFlipping(ci, H, iteration)
+function vHat = decodeBitFlipping(rx, H, iteration)
 % Hard-decision/bit flipping sum product algorithm LDPC decoder
 %
 %  rx        : Received signal vector (column vector)
@@ -14,7 +14,7 @@ function vHat = decodeBitFlipping(ci, H, iteration)
 [M N] = size(H);
 
 % Prior hard-decision
-% ci = 0.5*(sign(rx') + 1);
+ci = 0.5*(sign(rx') + 1);
 
 % Initialization
 rji = zeros(M, N);
@@ -25,7 +25,7 @@ qij = H.*repmat(ci, M, 1);
 % Iteration
 for n = 1:iteration
    
-   % fprintf('Iteration : %d\n', n);
+   fprintf('Iteration : %d\n', n);
    
    % ----- Horizontal step -----
    for i = 1:M

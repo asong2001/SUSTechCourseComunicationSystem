@@ -2,7 +2,7 @@
 classdef QPSKTransmitterR < matlab.System
     properties (Nontunable)
         UpsamplingFactor = 4;
-        MessageLength = 112;
+        MessageLength = 105;
         DataLength = 174;
         TransmitterFilterCoefficients = 1;
         ScramblerBase = 2;
@@ -41,8 +41,8 @@ classdef QPSKTransmitterR < matlab.System
             obj.pQPSKModulator  = comm.QPSKModulator( ...
                 'BitInput',                     true, ...
                 'PhaseOffset',                  pi/4);
-            obj.pTransmitterFilter = dsp.FIRInterpolator(...
-                obj.UpsamplingFactor,...
+            obj.pTransmitterFilter = dsp.FIRInterpolator( ...
+                obj.RolloffFactor, ...
                 obj.TransmitterFilterCoefficients);
         end
     end
