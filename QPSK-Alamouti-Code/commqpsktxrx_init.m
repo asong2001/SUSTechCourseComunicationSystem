@@ -10,7 +10,7 @@ SimParams.Decimation = 1;           % Decimation factor
 SimParams.Rsym = 5e4;               % Symbol rate in Hertz
 SimParams.Tsym = 1/SimParams.Rsym;  % Symbol time in sec
 SimParams.Fs   = SimParams.Rsym * SimParams.Interpolation; % Sample rate
-SimParams.TotalFrame = 10;        % Simulate 1000 frames in total
+SimParams.TotalFrame = 100;        % Simulate 1000 frames in total
 
 %% Frame Specifications
 % [BarkerCode*2 | 'Hello world 000\n' | 'Hello world 001\n' ...];
@@ -33,8 +33,8 @@ SimParams.ScramblerInitialConditions    = [0 0 0 0];
 SimParams.RaisedCosineFilterSpan = 10; % Filter span of Raised Cosine Tx Rx filters (in symbols)
 
 %% Channel parameters
-SimParams.PhaseOffset       = 47;   % in degrees
-SimParams.EbNo              = 0;   % in dB
+SimParams.PhaseOffset       = 0;   % in degrees
+SimParams.EbNo              = 20;   % in dB
 SimParams.FrequencyOffset   = 5000; % Frequency offset introduced by channel impairments in Hertz
 SimParams.DelayType         = 'Triangle'; % select the type of delay for channel distortion
 
@@ -46,7 +46,7 @@ SimParams.tau = [0 2e-5];    % Path delays (sec)
 SimParams.pdb = [0 -10];     % Average path gains (dB)
 SimParams.maxDopp = 30;      % Maximum Doppler shift (Hz)
 SimParams.numBits = 12000;   % Number of bits
-SimParams.SNR = 6;           % Signal-to-noise ratio (dB)
+SimParams.SNR = 20;           % Signal-to-noise ratio (dB)
 
 %% Rx parameters
 SimParams.DesiredPower                  = 2;            % AGC desired output power (in watts)

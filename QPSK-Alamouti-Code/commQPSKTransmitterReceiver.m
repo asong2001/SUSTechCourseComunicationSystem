@@ -4,7 +4,7 @@
 % initializes simulation parameters and generates the structure prmQPSKTxRx.
 prmQPSKTxRx = commqpsktxrx_init; %#ok<*NOPTS> % QPSK system parameters
 
-useScopes = false;   % true if scopes are to be used
+useScopes = true;   % true if scopes are to be used
 printReceivedData = true; %true if the received data is to be printed
 compileIt = false;  % true if code is to be compiled
 useCodegen = false; % true to run the generated mex file
