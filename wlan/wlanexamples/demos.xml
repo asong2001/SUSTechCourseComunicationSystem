@@ -1,0 +1,102 @@
+<!-- Copyright 2014-2015 The MathWorks, Inc. -->
+<demos>
+    <name>WLAN System</name>
+    <type>toolbox</type>
+    <icon>$toolbox/matlab/icons/matlabicon.gif</icon>
+    
+    <!-- WLAN Modeling -->
+    <demosection>
+    <label>WLAN Modeling</label>
+
+        <demoitem>
+            <label>Basic WLAN Link Modeling</label>
+            <type>M-file</type>
+            <source>BasicWLANLinkModelingExample</source>
+        </demoitem>
+        <demoitem>
+            <label>802.11ac Transmit Beamforming</label>
+            <type>M-file</type>
+            <source>VHTBeamformingExample</source>
+        </demoitem>
+        
+    </demosection>
+    <!-- Waveform Generation and Analysis -->
+    <demosection>
+        <label>Waveform Generation and Analysis</label>
+
+        <demoitem>
+            <label>802.11ac Waveform Generation with MAC Frames</label>
+            <type>M-file</type>
+            <source>VHTWaveformGenerationExample</source>
+        </demoitem>
+        
+        <demoitem>
+            <label>802.11ac Transmitter Modulation Accuracy and Spectral Emission Testing</label>
+            <type>M-file</type>
+            <source>VHTTransmitterMeasurementsExample</source>
+        </demoitem>
+
+        <demoitem>
+            <label>802.11p Spectral Emission Mask Testing</label>
+            <type>M-file</type>
+            <source>SpectralEmissionMask10MHzExample</source>
+        </demoitem>
+
+    </demosection>
+	<!-- End to End Simulation -->
+    <demosection>
+        <label>End to End Simulation</label>
+        <demoitem>
+            <label>802.11ac Packet Error Rate Simulation for 8x8 TGac Channel</label>
+            <type>M-file</type>
+            <source>VHTMIMOPacketErrorRateExample</source>
+        </demoitem>
+        <demoitem>
+            <label>802.11n Packet Error Rate Simulation for 2x2 TGn Channel</label>
+            <type>M-file</type>
+            <source>HTMIMOPacketErrorRateExample</source>
+        </demoitem>
+        <demoitem>
+            <label>802.11p and 802.11a Packet Error Rate Simulations</label>
+            <type>M-file</type>
+            <source>NonHTPacketErrorRateExample</source>
+        </demoitem>
+        <demoitem>
+            <label>802.11ac Receiver Minimum Input Sensitivity Test</label>
+            <type>M-file</type>
+            <source>ReceiverSensitivityTestExample</source>
+        </demoitem>
+    </demosection>
+    
+    <demosection>
+        <label>Signal Recovery</label>
+        <demoitem>            
+            <label>802.11 OFDM Beacon Receiver with Live Data</label>
+            <type>M-file</type>
+            <source>NonHTBeaconReceiverExample</source>
+        </demoitem>
+        <demoitem>            
+            <label>802.11ac Signal Recovery with Preamble Decoding</label>
+            <type>M-file</type>
+            <source>VHTSignalRecoveryExample</source>
+        </demoitem>
+    </demosection>
+    
+    <!-- Software-Defined Radio(SDR) -->
+    <demosection>
+        <label>Software-Defined Radio (SDR)</label>
+        <demoitem>            
+            <label>Transmit and Receive 802.11a Using Analog Devices AD9361/AD9364</label>
+            <type>M-file</type>
+            <source>SDRWLANSISO80211aTransceiverZynq</source>
+            <file>html/SDRWLANSISO80211aTransceiverZynq.html</file>
+        </demoitem>
+        <demoitem>            
+            <label>802.11 OFDM Beacon Receiver with USRP Hardware</label>
+            <type>M-file</type>
+            <source>sdruwlanofdm80211BeaconRx</source>
+            <file>html/sdruwlanofdm80211BeaconRx.html</file>
+        </demoitem>
+    </demosection>
+	
+</demos>

@@ -1,0 +1,12 @@
+<productinfo
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.mathworks.com/namespace/info/v1/info.xsd">
+  <?xml-stylesheet type="text/xsl" href="http://www.mathworks.com/namespace/info/v1/info.xsl"?>
+
+  <matlabrelease></matlabrelease>
+  <name>WLAN System</name>
+  <type>toolbox</type>
+  <icon>$toolbox/matlab/icons/matlabicon.gif</icon>
+  <help_location>$docroot/toolbox/wlan</help_location>
+
+</productinfo>

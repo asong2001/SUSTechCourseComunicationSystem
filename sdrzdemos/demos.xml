@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+
+<demos>
+    <name>Communications System Toolbox Support Package for Xilinx Zynq-Based Radio</name>
+    <type>matlab</type>
+    <icon>$toolbox/matlab/icons/matlabicon.gif</icon>
+    <description isCdata="no">
+        <p>Communications System Toolbox Support Package for Xilinx Zynq-Based Radio provides a library of blocks and System objects 
+            to utilize SDR hardware for rapid prototyping.
+        </p>
+    </description>
+  
+    <demosection>
+        <label>Simulink Examples for AD9361/AD9364</label>
+        <demosection>
+            <label>Diagnostics</label>
+            <demoitem>
+                <label>Frequency Offset Calibration Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>zynqRadioFrequencyCalibrationTxAD9361AD9364SL</source>
+                <file>html/zynqRadioFrequencyCalibrationTxAD9361AD9364SL.html</file> 
+            </demoitem>  
+        </demosection>        
+       
+        <demosection>
+            <label>Hardware/Software Co-design</label>
+            <demoitem>
+                <label>HW/SW Co-design QPSK Transmit and Receive Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>zynqRadioHWSWQPSKAD9361AD9364SL</source>
+                <file>html/zynqRadioHWSWQPSKAD9361AD9364SL.html</file> 
+            </demoitem>  
+            <demoitem>
+                <label>HW/SW Co-design Implementation of LTE OFDM Detector Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <dependency>LTE System Toolbox</dependency>
+                <type>model</type>
+                <source>zynqRadioHWSWLTEDetectorAD9361AD9364SL</source>
+                <file>html/zynqRadioHWSWLTEDetectorAD9361AD9364SL.html</file> 
+            </demoitem>
+        </demosection>
+        
+        <demosection>
+            <label>Digital Modulation</label>
+            <demoitem>
+                <label>QPSK Transmitter Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>zynqRadioQPSKTxAD9361AD9364SL</source>
+                <file>html/zynqRadioQPSKTxAD9361AD9364SL.html</file> 
+            </demoitem>
+            <demoitem>
+                <label>QPSK Receiver Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>zynqRadioQPSKRxAD9361AD9364SL</source>
+                <file>html/zynqRadioQPSKRxAD9361AD9364SL.html</file> 
+            </demoitem>
+        </demosection>
+        
+        <demosection>
+            <label>HDL</label>
+            <demoitem>
+                <label>Targeting HDL Optimized QPSK Transmitter Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>zynqRadioQPSKTxFPGAAD9361AD9364SL</source>
+                <file>html/zynqRadioQPSKTxFPGAAD9361AD9364SL.html</file> 
+            </demoitem>
+            <demoitem>
+                <label>Targeting HDL Optimized QPSK Receiver Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>zynqRadioQPSKRxFPGAAD9361AD9364SL</source>
+                <file>html/zynqRadioQPSKRxFPGAAD9361AD9364SL.html</file> 
+            </demoitem>   	
+            <demoitem>
+                <label>Targeting the HDL Optimized 802.11 WLAN Beacon Frame Receiver Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>zynqRadioWLAN80211BeaconRxFPGAAD9361AD9364SL</source>
+                <file>html/zynqRadioWLAN80211BeaconRxFPGAAD9361AD9364SL.html</file> 
+            </demoitem>
+        </demosection>
+        
+        <demosection>
+            <label>Application-Specific Examples</label>
+             <demoitem>
+                <label>FM Monophonic Receiver Using Analog Devices AD9361/AD9364</label>
+                <type>model</type>
+                <source>zynqRadioFMMonoAD9361AD9364SL</source>
+                <file>html/zynqRadioFMMonoAD9361AD9364SL.html</file>
+            </demoitem>
+             <demoitem>
+                <label>FM Stereo Receiver Using Analog Devices AD9361/AD9364</label>
+                <type>model</type>
+                <source>zynqRadioFMStereoAD9361AD9364SL</source>
+                <file>html/zynqRadioFMStereoAD9361AD9364SL.html</file>
+            </demoitem>
+            <demoitem>
+                <label>Walkie-Talkie Transmitter Using Analog Devices AD9361/AD9364</label>
+                <type>model</type>
+                <source>zynqRadioWalkieTalkieTxAD9361AD9364SL</source>
+                <file>html/zynqRadioWalkieTalkieTxAD9361AD9364SL.html</file>
+            </demoitem>
+            <demoitem>
+                <label>Walkie-Talkie Receiver Using Analog Devices AD9361/AD9364</label>
+                <type>model</type>
+                <source>zynqRadioWalkieTalkieRxAD9361AD9364SL</source>
+                <file>html/zynqRadioWalkieTalkieRxAD9361AD9364SL.html</file>
+            </demoitem>
+            <demoitem>
+                <label>IEEE 802.11b WLAN - Beacon Frame Receiver Using Analog Devices AD9361/AD9364</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>zynqRadioWLAN80211BeaconRxAD9361AD9364SL</source>
+                <file>html/zynqRadioWLAN80211BeaconRxAD9361AD9364SL.html</file> 
+            </demoitem>
+        </demosection>
+    </demosection>
+    
+    <demosection>
+        <label>MATLAB Examples for AD9361/AD9364</label>
+        <demosection>
+            <label>Diagnostics</label>
+            <demoitem>
+                <label>Receive Tone Signal Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioToneReceiverAD9361AD9364ML</source>
+            </demoitem>  
+            <demoitem>
+                <label>Frequency Offset Calibration Receiver Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioFrequencyCalibrationReceiverAD9361AD9364ML</source>
+            </demoitem>
+            <demoitem>
+                <label>Frequency Offset Calibration Transmitter Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioFrequencyCalibrationTransmitterAD9361AD9364ML</source>
+            </demoitem>
+        </demosection>
+        
+        <demosection>
+            <label>Digital Modulation</label> 
+            <demoitem>
+                <label>QPSK Transmitter Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioQPSKTransmitterAD9361AD9364ML</source>
+            </demoitem>  
+            <demoitem>
+                <label>QPSK Receiver Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioQPSKReceiverAD9361AD9364ML</source>
+            </demoitem>
+            <demoitem>
+                <label>QPSK Transmit Repeat Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioQPSKTransmitRepeatAD9361AD9364ML</source>
+            </demoitem>
+        </demosection>
+        
+        <demosection>
+            <label>Application-Specific Examples</label>
+              <demoitem>
+                <label>FM Monophonic Receiver Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioFMMonoReceiverAD9361AD9364ML</source>
+            </demoitem>
+            <demoitem>
+                <label>FM Stereo Receiver Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioFMStereoReceiverAD9361AD9364ML</source>
+            </demoitem>
+            <demoitem>
+                <label>Walkie-Talkie Transmitter Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioWalkieTalkieTransmitterAD9361AD9364ML</source>
+            </demoitem> 
+            <demoitem>
+                <label>Walkie-Talkie Receiver Using Analog Devices AD9361/AD9364</label>
+                <type>M-file</type>
+                <source>zynqRadioWalkieTalkieReceiverAD9361AD9364ML</source>
+            </demoitem> 
+            <demoitem>
+                <label>LTE Transmitter Using Analog Devices AD9361/AD9364</label>
+                <dependency>LTE System Toolbox</dependency>
+                <type>M-file</type>
+                <source>zynqRadioLTETransmitterAD9361AD9364ML</source>
+            </demoitem>
+            <demoitem>
+                <label>LTE Receiver Using Analog Devices AD9361/AD9364</label>
+                <dependency>LTE System Toolbox</dependency>
+                <type>M-file</type>
+                <source>zynqRadioLTEReceiverAD9361AD9364ML</source>
+            </demoitem>
+            <demoitem>            
+                <label>Transmit and Receive LTE MIMO Using a Single Analog Devices AD9361/AD9364</label>
+                <dependency>LTE System Toolbox</dependency>
+                <type>M-file</type>
+                <source>zynqRadioLTEMIMOTransmitReceiveAD9361AD9364ML</source>
+            </demoitem>
+            <demoitem>            
+                <label>Transmit and Receive 802.11a Using Analog Devices AD9361/AD9364</label>
+                <dependency>WLAN System Toolbox</dependency>
+                <type>M-file</type>
+                <source>zynqRadioWLANTransmitReceiveAD9361AD9364ML</source>
+            </demoitem>
+        </demosection>
+    </demosection>
+    
+    <demosection>
+        <label>Simulink Examples for FMCOMMS1</label>
+        <demosection>
+            <label>Diagnostics</label>
+            <demoitem>
+                <label>Frequency Offset Calibration with Analog Devices FMCOMMS1</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>sdrzfreqcalib</source>
+                <file>html/sdrzfreqcalib.html</file> 
+            </demoitem>  
+        </demosection>
+        
+        <demosection>
+            <label>Digital Modulation</label>
+            <demoitem>
+                <label>QPSK Transmitter with Analog Devices FMCOMMS1</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>sdrzqpsktx</source>
+                <file>html/sdrzqpsktx.html</file> 
+            </demoitem>
+            <demoitem>
+                <label>QPSK Receiver with Analog Devices FMCOMMS1</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>sdrzqpskrx</source>
+                <file>html/sdrzqpskrx.html</file> 
+            </demoitem>
+        </demosection>
+        
+        <demosection>
+            <label>HDL</label>
+            <demoitem>
+                <label>Targeting HDL Optimized QPSK Transmitter with Analog Devices FMCOMMS1</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>sdrzQPSKTxFPGA</source>
+                <file>html/sdrzQPSKTxFPGA.html</file> 
+            </demoitem>
+            <demoitem>
+                <label>Targeting HDL Optimized QPSK Receiver with Analog Devices FMCOMMS1</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>sdrzQPSKRxFPGA</source>
+                <file>html/sdrzQPSKRxFPGA.html</file> 
+            </demoitem>   	
+        </demosection>
+        
+        <demosection>
+            <label>Application-Specific Examples</label>
+            <demoitem>
+                <label>Walkie-Talkie Transmitter with Analog Devices FMCOMMS1</label>
+                <type>model</type>
+                <source>sdrzWalkieTalkieTx</source>
+                <file>html/sdrzWalkieTalkieTx.html</file>
+            </demoitem>
+            <demoitem>
+                <label>Walkie-Talkie Receiver with Analog Devices FMCOMMS1</label>
+                <type>model</type>
+                <source>sdrzWalkieTalkieRx</source>
+                <file>html/sdrzWalkieTalkieRx.html</file>
+            </demoitem>
+            <!--  pkaragia: Not shipping 802.11 WLAN Beacon example for FMC1 see g1352094
+            <demoitem>
+                <label>IEEE 802.11b WLAN - Beacon Frame Receiver with Analog Devices FMCOMMS1</label>
+                <dependency>Simulink</dependency>
+                <type>model</type>
+                <source>sdrzwlan80211BeaconRx</source>
+                <file>html/sdrzwlan80211BeaconRx.html</file> 
+            </demoitem> -->
+        </demosection>
+    </demosection>
+    
+    <demosection>
+        <label>MATLAB Examples for FMCOMMS1</label>
+        <demosection>
+            <label>Diagnostics</label>
+            <demoitem>
+                <label>Receive Tone Signal with Analog Devices FMCOMMS1</label>
+                <type>M-file</type>
+                <source>sdrzToneReceiver</source>
+            </demoitem>                 
+            <demoitem>
+                <label>Frequency Offset Calibration Receiver with Analog Devices FMCOMMS1</label>
+                <type>M-file</type>
+                <source>sdrzFrequencyCalibrationReceiver</source>
+            </demoitem>
+            <demoitem>
+                <label>Frequency Offset Calibration Transmitter with Analog Devices FMCOMMS1</label>
+                <type>M-file</type>
+                <source>sdrzFrequencyCalibrationTransmitter</source>
+            </demoitem>
+        </demosection>
+        
+        <demosection>
+            <label>Digital Modulation</label> 	
+            <demoitem>
+                <label>QPSK Transmitter with Analog Devices FMCOMMS1</label>
+                <type>M-file</type>
+                <source>sdrzQPSKTransmitter</source>
+            </demoitem>  
+            <demoitem>
+                <label>QPSK Receiver with Analog Devices FMCOMMS1</label>
+                <type>M-file</type>
+                <source>sdrzQPSKReceiver</source>
+            </demoitem> 
+        </demosection>
+        
+        <demosection>
+            <label>Application-Specific Examples</label>
+            <demoitem>
+                <label>Walkie-Talkie Transmitter with Analog Devices FMCOMMS1</label>
+                <type>M-file</type>
+                <source>sdrzWalkieTalkieTransmitter</source>
+            </demoitem> 
+            <demoitem>
+                <label>Walkie-Talkie Receiver with Analog Devices FMCOMMS1</label>
+                <type>M-file</type>
+                <source>sdrzWalkieTalkieReceiver</source>
+            </demoitem> 
+            <demoitem>
+                <label>LTE Transmitter with Analog Devices FMCOMMS1 RevB/C</label>
+                <dependency>LTE System Toolbox</dependency>
+                <type>M-file</type>
+                <source>sdrzLTETransmitter</source>
+            </demoitem>
+            <demoitem>
+                <label>LTE Receiver with Analog Devices FMCOMMS1 RevB/C</label>
+                <dependency>LTE System Toolbox</dependency>
+                <type>M-file</type>
+                <source>sdrzLTEReceiver</source>
+            </demoitem>
+        </demosection>
+    </demosection>
+</demos>
