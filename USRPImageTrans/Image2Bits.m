@@ -10,10 +10,10 @@ function [txImage,fData]=Image2Bits
 %     'YLimits',         [-150 -50], ...
 %     'Title',           'Received Baseband WLAN Signal Spectrum', ...
 %     'YLabel',          'Power spectral density');
-% 
-% % 2.2 配置星座图工具
+% % 
+% % % 2.2 配置星座图工具
 % hcd = comm.ConstellationDiagram('Title','Equalized WLAN Symbols','ShowReferenceConstellation',false);
-                            
+%                             
 %2.4 发射机设计步骤
 % 一. 导入图像，生成二进制码流
 % 二. 将二进制信号打包成802.11a格式的信号
@@ -21,11 +21,12 @@ function [txImage,fData]=Image2Bits
 
 % 一. 导入图像，生成二进制码流
 %（1）图像文件名
-fileTx = 'peppers.png';   % Image file name
+% fileTx = 'peppers.png';   % Image file name
+fileTx = 'robot.png';   % Image file name
 
 %（2）读取文件，fData是一个三维数组，在MATLAB中，图像尺寸返回值最后一位表示维度
 fData = imread(fileTx);   % Read image data from file
-
+fData = imresize(fData,[384, 512]);
 %————————————————————————————————————————
 %这一部分的作用是将一幅大的图像缩小传输
 %（3）定义尺寸变换因子
@@ -33,6 +34,7 @@ scale = 0.3;                % Image scaling factor
 
 %（4）原始图像尺寸，例如size(fData)，返回值 ans = 384   512     3
 origSize = size(fData);   % Original input image size
+
 
 %（5）需要传输的图像尺寸 Calculate new image size
 scaledSize = max(floor(scale.*origSize(1:2)),1); 

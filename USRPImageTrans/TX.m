@@ -12,6 +12,10 @@ clear
 %(1)图像转换为比特流（信源编码）；
 [txImage,fData]=Image2Bits;
 
+% measurements = regionprops(txImage, 'Perimeter');
+% allPerimeters = [measurements.Perimeter];
+% theSum = sum(allPerimeters);
+
 %(2)比特封装为PSDU，增加了MAC头文件；
 [PSDUData,numPSDUs]=Bits2PSDU(txImage);
 

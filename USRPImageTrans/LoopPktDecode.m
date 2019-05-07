@@ -131,9 +131,9 @@ while (searchOffset + minPktLen) <= rxWaveformLen
            chanEstLLTF,noiseVarNonHT,rxNonHTcfg);
  
 % ÏÔÊ¾µ±Ç°ÐÇ×ùÍ¼
-  %   hcd = comm.ConstellationDiagram('Title','Equalized WLAN Symbols','ShowReferenceConstellation',false);
-  %   step(hcd,reshape(eqSym,[],1)); % Current constellation 
-  %   release(hcd); % Release previous constellation plot
+    hcd = comm.ConstellationDiagram('Title','Equalized WLAN Symbols','ShowReferenceConstellation',false);
+    step(hcd,reshape(eqSym,[],1)); % Current constellation 
+    release(hcd); % Release previous constellation plot
  
      refSym = helperClosestConstellationPoint(eqSym,rxNonHTcfg);
     [evm.RMS,evm.Peak] = step(hEVM,refSym,eqSym);

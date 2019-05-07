@@ -6,10 +6,10 @@
 %load('PSDUdata.mat')
 %（1）创建WLAN数据包
     nonHTcfg = wlanNonHTConfig;         % Create packet configuration
-    nonHTcfg.ChannelBandwidth='CBW5';
+    nonHTcfg.ChannelBandwidth='CBW20';
     
 %（2）调制方式：64QAM，信道编码速率为2/3
-    nonHTcfg.MCS = 4;           % Modulation: 64QAM Rate: 2/3
+    nonHTcfg.MCS = 6;           % Modulation: 64QAM Rate: 2/3
 
 %（3）发射天线数目
     nonHTcfg.NumTransmitAntennas = 1;   % Number of transmit antenna
